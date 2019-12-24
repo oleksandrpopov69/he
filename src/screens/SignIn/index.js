@@ -42,7 +42,14 @@ const SignInScreen = (props) => {
                 >
                     <Text style={styles.terms}>Forgot your password?</Text>
                 </TouchableOpacity>
-                <Button text={'Sign In'} onPress={() => navigate('')} color={'blue'} size={'middle'} outline={false} />
+                <Button text={'Sign In'}
+                        onPress={() => navigate('')}
+                        color={'blue'}
+                        size={'large'}
+                        gradient={true}
+                        start={{x: 0, y: 0}}
+                        end={{x: 1, y: 0}}
+                />
                 <View style={styles.links}>
                     <TouchableOpacity
                         onPress={() => Linking.openURL('https://www.facebook.com').catch(err => console.error("Couldn't load page", err))}>

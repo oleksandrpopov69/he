@@ -69,7 +69,14 @@ const VerificationScreen = (props) => {
                 <TouchableOpacity style={styles.resendWrapper}>
                     <Text style={styles.resend}>Resend Email</Text>
                 </TouchableOpacity>
-                <Button text={'Verify'} onPress={() => navigate('SignIn')} color={'blue'} size={'large'} outline={false}/>
+                <Button text={'Verify'}
+                        onPress={() => navigate('SignIn')}
+                        color={'blue'}
+                        size={'large'}
+                        gradient={true}
+                        start={{x: 0, y: 0}}
+                        end={{x: 1, y: 0}}
+                />
             </View>
         </ScrollView>
 

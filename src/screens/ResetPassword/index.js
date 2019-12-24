@@ -37,7 +37,14 @@ const ResetPasswordScreen = (props) => {
                     Enter the email address associated with your account, and we’ll email you a link to reset your password.
                 </Text>
                 <Input style={styles.email} type={'email'}/>
-                <Button text={'Send Resent Link'} onPress={() => navigate('NewPassword')} color={'blue'} size={'large'} outline={false} />
+                <Button text={'Send Resent Link'}
+                        onPress={() => navigate('NewPassword')}
+                        color={'blue'}
+                        size={'large'}
+                        gradient={true}
+                        start={{x: 0, y: 0}}
+                        end={{x: 1, y: 0}}
+                />
             </View>
         </ScrollView>
 

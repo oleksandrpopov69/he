@@ -49,7 +49,14 @@ const SignUpScreen = (props) => {
                         <Text style={styles.terms}> Terms & Conditions</Text>
                     </TouchableOpacity>
                 </View>
-                <Button text={'Sign Up'} onPress={() => navigate('Verification')} color={'blue'} size={'large'} outline={false} />
+                <Button text={'Sign Up'}
+                        onPress={() => navigate('Verification')}
+                        color={'blue'}
+                        size={'large'}
+                        gradient={true}
+                        start={{x: 0, y: 0}}
+                        end={{x: 1, y: 0}}
+                />
                 <View style={styles.links}>
                     <TouchableOpacity onPress={() => Linking.openURL('https://www.facebook.com').catch(err => console.error("Couldn't load page", err))}>
                         <Image style={styles.link}

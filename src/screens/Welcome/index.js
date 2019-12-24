@@ -29,7 +29,15 @@ const WelcomeScreen = (props) => {
                     resources, experts and a messaging
                     platform to get you started. We are
                     stoked you joined us.</Text>
-                <Button text={'Sign Up'} onPress={() => navigate('SignUp')} color={'blue'} size={'large'} outline={false}/>
+                <Button text={'Sign Up'}
+                        onPress={() => navigate('SignUp')}
+                        color={'blue'}
+                        size={'large'}
+                        gradient={true}
+                        start={{x: 0, y: 0}}
+                        end={{x: 1, y: 0}}
+                        outline
+                />
                 <TouchableOpacity
                     onPress={() => navigate('SignIn')}>
                     <Text style={styles.href}>Already a member?</Text>
