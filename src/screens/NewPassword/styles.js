@@ -12,7 +12,8 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'flex-start',
-        height: 812
+        height: 812,
+        backgroundColor: theme.getColor('white')
     },
     arrowContainer: {
         width: 315,
@@ -28,11 +29,11 @@ const styles = StyleSheet.create({
         width: 315,
         height: 86,
         marginTop: 36,
+        marginBottom: 29,
         ...text.b36('dark1'),
         fontWeight: 'bold'
     },
     password: {
-        marginTop: 30,
         marginBottom: 219
     }
 });

@@ -12,7 +12,8 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'flex-start',
-        height: 812
+        height: 812,
+        backgroundColor: theme.getColor('white')
     },
     arrowContainer: {
         width: 315,
@@ -28,11 +29,9 @@ const styles = StyleSheet.create({
         width: 315,
         height: 46,
         marginTop: 36,
+        marginBottom: 72,
         ...text.b36('dark1'),
         fontWeight: 'bold'
-    },
-    email: {
-        marginTop: 72,
     },
     password: {
         marginTop: 20

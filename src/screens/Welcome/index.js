@@ -33,10 +33,7 @@ const WelcomeScreen = (props) => {
                         onPress={() => navigate('SignUp')}
                         color={'blue'}
                         size={'large'}
-                        gradient={true}
-                        start={{x: 0, y: 0}}
-                        end={{x: 1, y: 0}}
-                        outline
+                        gradient
                 />
                 <TouchableOpacity
                     onPress={() => navigate('SignIn')}>

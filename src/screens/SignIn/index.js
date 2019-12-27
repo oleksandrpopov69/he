@@ -35,8 +35,12 @@ const SignInScreen = (props) => {
                 <Text style={styles.signIn}>
                     Sign In
                 </Text>
-                <Input style={styles.email} type={'email'}/>
-                <Input style={styles.password} type={'password'}/>
+                <View>
+                    <Input type={'email'} text={'Email Address'}/>
+                </View>
+                <View style={styles.password}>
+                    <Input type={'password'} text={'Password'}/>
+                </View>
                 <TouchableOpacity style={styles.forgot}
                                   onPress={() => navigate('ResetPassword')}
                 >

@@ -9,7 +9,7 @@ import {getButtonStyles, getBackgroundStyles, getTextStyles, getViewStyles, grad
 import LinearGradient from "react-native-linear-gradient";
 
 const Button = (props) => {
-    const { text, onPress, color, size, outline, gradient, start, end } = props;
+    const { text, onPress, color, size, outline, gradient } = props;
     const Background = gradient ? LinearGradient : View;
     let backgroundProps = { style: getBackgroundStyles(size, gradient, color) };
 
@@ -17,8 +17,8 @@ const Button = (props) => {
         backgroundProps = {
             ...backgroundProps,
             colors: gradientColors[color],
-            start : start,
-            end : end
+            start : {x: 0, y: 0},
+            end : {x: 1, y: 0}
         }
     }
 

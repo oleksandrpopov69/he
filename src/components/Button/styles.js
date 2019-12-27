@@ -18,7 +18,7 @@ const sizes = {
         height: 56,
         borderRadius: 14
     },
-    short: {
+    small: {
         width: '20%',
         height: 32,
         borderRadius: 6
@@ -47,7 +47,7 @@ const fontSizes = {
     middle: {
         ...text.b18('white')
     },
-    short: {
+    small: {
         ...text.b14('white')
     }
 };
@@ -85,7 +85,7 @@ export const getViewStyles = (size, color, outline, gradient) => {
     if (gradient) {
         return {
             ...viewStyles,
-            height: '96%',
+            height: '95%',
             width: '99%',
             borderRadius: sizes[size].borderRadius,
             backgroundColor: outline ? colors.white : 'transparent'

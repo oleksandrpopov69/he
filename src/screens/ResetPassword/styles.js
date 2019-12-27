@@ -12,7 +12,8 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'flex-start',
-        height: 812
+        height: 812,
+        backgroundColor: theme.getColor('white')
     },
     arrowContainer: {
         width: 315,
@@ -34,13 +35,13 @@ const styles = StyleSheet.create({
     instructions: {
         width: 315,
         height: 75,
-        marginTop: 30,
+        marginTop: 20,
+        marginBottom: 30,
         ...text.r18('grey'),
     },
     email: {
-        marginTop: 30,
         marginBottom: 156
-    },
+    }
 });
 
 export default styles;

@@ -33,7 +33,9 @@ const NewPasswordScreen = (props) => {
                 <Text style={styles.caption}>
                     Enter your new password
                 </Text>
-                <Input style={styles.password} type={'password'}/>
+                <View style={styles.password}>
+                    <Input type={'password'} text={'Password'}/>
+                </View>
                 <Button text={'Reset Password'}
                         onPress={() => navigate('SignIn')}
                         color={'blue'}

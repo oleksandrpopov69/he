@@ -37,8 +37,12 @@ const SignUpScreen = (props) => {
                 <Text style={styles.signUp}>
                     Sign Up
                 </Text>
-                <Input style={styles.email} type={'email'}/>
-                <Input style={styles.password} type={'password'}/>
+                <View>
+                    <Input type={'email'} text={'Email Address'}/>
+                </View>
+                <View style={styles.password}>
+                    <Input type={'password'} text={'Password'}/>
+                </View>
                 <View style={styles.agreement}>
                     <TouchableOpacity
                         onPress={() => setChecked(!checked)}>

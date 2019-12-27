@@ -12,7 +12,8 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'flex-start',
-        height: 812
+        height: 812,
+        backgroundColor: theme.getColor('white')
     },
     arrowContainer: {
         width: 315,
