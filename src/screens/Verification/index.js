@@ -7,8 +7,8 @@ import i18n from '../../locales';
 import {ScrollView, View, Image, Text, TouchableOpacity, TextInput} from "react-native";
 import arrowLeft from '../../assets/arrow-left.png'
 import Button from "../../components/Button";
-import styles from './styles'
-import React from "react";
+import styles, {getCodeItemWrapper} from './styles'
+import React, {useState} from "react";
 import profile from "../../assets/profile.png";
 
 const VerificationScreen = (props) => {
@@ -19,6 +19,25 @@ const VerificationScreen = (props) => {
     };
 
     const {language} = state;
+    const verificationCode = '1111';
+    let verificationValues = ['','','',''];
+    let [verificationString, setVerificationString] = useState(0);
+    let [error, setError] = useState(false);
+    const getVerification = (verificationString, verificationCode) => {
+        verificationCode !== verificationString ? setError(true) : setError(false);
+    };
+
+    const verificationValue = verificationValues.map((i, index) => {
+        return (
+            <View style={getCodeItemWrapper(error)}>
+                <Text style={styles.codeItem}>{verificationString[index]}</Text>
+            </View>
+        )
+    });
+
+    const onBlur = (verificationString, verificationCode) => {
+        verificationString.length === 4 ? getVerification(verificationString, verificationCode) : null
+    };
 
     return (
         <ScrollView>
@@ -52,19 +71,14 @@ const VerificationScreen = (props) => {
                     </Text>
                 </View>
                 <View style={styles.codeWrapper}>
-                    <View style={styles.codeItemWrapper}>
-                        <Text style={styles.codeItem}>1</Text>
-                    </View>
-                    <View style={styles.codeItemWrapper}>
-                        <Text style={styles.codeItem}>1</Text>
-                    </View>
-                    <View style={styles.codeItemWrapper}>
-                        <Text style={styles.codeItem}>1</Text>
-                    </View>
-                    <View style={styles.codeItemWrapper}>
-                        <Text style={styles.codeItem}>1</Text>
-                    </View>
-                    <TextInput style={styles.input} keyboardType={'numeric'}/>
+                    {verificationValue}
+                    <TextInput style={styles.input}
+                               keyboardType={'numeric'}
+                               maxLength={4}
+                               onChangeText={value => setVerificationString(value)}
+                               onBlur={() => onBlur(verificationString, verificationCode)}
+                    />
+                    { error && <Text style={styles.error}>We couldn’t recognize this code</Text>}
                 </View>
                 <TouchableOpacity style={styles.resendWrapper}>
                     <Text style={styles.resend}>Resend Email</Text>

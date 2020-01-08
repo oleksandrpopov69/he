@@ -3,7 +3,7 @@ import colors from './colors';
 import text from './text';
 import sizes from './sizes';
 
-const shadows = {
+export const shadows = {
   modal: {
     shadowColor: 'rgba(58, 76, 130, 0.1)',
     shadowOffset: {

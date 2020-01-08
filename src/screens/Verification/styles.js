@@ -62,21 +62,11 @@ const styles = StyleSheet.create({
         ...text.r18('grey')
     },
     codeWrapper: {
-        width:315,
+        width: 315,
         height: 90,
         marginTop: 31,
         flexDirection: 'row',
         justifyContent: 'space-between'
-    },
-    codeItemWrapper: {
-        width: 72,
-        height: 90,
-        borderRadius: 12,
-        borderWidth: .5,
-        borderColor: theme.getColor('grey'),
-        backgroundColor: theme.getColor('white'),
-        justifyContent: 'center',
-        alignItems: 'center'
     },
     codeItem: {
         ...text.b36('dark1'),
@@ -102,7 +92,26 @@ const styles = StyleSheet.create({
     },
     resend: {
         ...text.r14('purple')
+    },
+    error: {
+        position: 'absolute',
+        top: 100,
+        width: 177,
+        height: 16,
+        ...text.r12('orange2')
     }
 });
 
+export const getCodeItemWrapper = (error) => {
+    return {
+        width: 72,
+        height: 90,
+        borderRadius: 12,
+        borderWidth: .5,
+        backgroundColor: theme.getColor('white'),
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderColor: error ? theme.getColor('orange2') : theme.getColor('grey')
+    }
+};
 export default styles;

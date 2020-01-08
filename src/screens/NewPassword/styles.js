@@ -5,6 +5,7 @@
 
 import {StyleSheet} from 'react-native';
 import theme from "../../theme";
+const {shadows} = theme;
 const {text} = theme;
 
 const styles = StyleSheet.create({
@@ -35,6 +36,23 @@ const styles = StyleSheet.create({
     },
     password: {
         marginBottom: 219
+    },
+    modalView: {
+        ...shadows.modal,
+        height: 132,
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 30
+    },
+    modalText: {
+        ...text.r18('dark1'),
+        height: 25,
+        width: 265
+    },
+    modalImage: {
+        width: 34,
+        height: 34
     }
 });
 
