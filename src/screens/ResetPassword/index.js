@@ -43,7 +43,8 @@ const ResetPasswordScreen = (props) => {
                         onPress={() => navigate('NewPassword')}
                         color={'blue'}
                         size={'large'}
-                        gradient={true}
+                        shadow={'light'}
+                        gradient
                         start={{x: 0, y: 0}}
                         end={{x: 1, y: 0}}
                 />

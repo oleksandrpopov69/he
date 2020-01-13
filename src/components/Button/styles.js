@@ -6,6 +6,7 @@
 import theme from "../../theme";
 
 const {text} = theme;
+const {shadows} = theme;
 
 const sizes = {
     large: {
@@ -57,11 +58,12 @@ export const gradientColors = {
     orange: ['#f75d59', '#ffbd6d']
 };
 
-export const getButtonStyles = (size) => {
+export const getButtonStyles = (size, shadow) => {
     return {
         justifyContent: 'center',
         alignItems: 'center',
-        ...sizes[size]
+        ...sizes[size],
+        ...shadows[shadow]
     }
 };
 

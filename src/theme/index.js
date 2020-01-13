@@ -13,7 +13,7 @@ export const shadows = {
     shadowRadius: 28,
     shadowOpacity: 1,
 
-    elevation: 2,
+    elevation: 5,
   },
   light: {
     shadowColor: 'rgba(58, 76, 130, 0.2)',

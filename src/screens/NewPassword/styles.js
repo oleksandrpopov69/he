@@ -37,13 +37,20 @@ const styles = StyleSheet.create({
     password: {
         marginBottom: 219
     },
-    modalView: {
+    modal: {
         ...shadows.modal,
+        borderTopLeftRadius: 30,
+        borderTopRightRadius: 30,
+        borderRadius: 30,
+        backgroundColor: theme.getColor('white'),
+        borderWidth: .3,
+        borderColor: theme.getColor('grey')
+    },
+    content: {
         height: 132,
-        flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
-        borderRadius: 30
+        flexDirection: 'row'
     },
     modalText: {
         ...text.r18('dark1'),

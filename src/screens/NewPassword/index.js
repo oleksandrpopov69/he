@@ -52,19 +52,22 @@ const NewPasswordScreen = (props) => {
                         text={'Reset Password'}
                         color={'blue'}
                         size={'large'}
+                        shadow={'light'}
                         gradient={true}
                         start={{x: 0, y: 0}}
                         end={{x: 1, y: 0}}
                 />
                 <Modalize ref={modalRef}
-                          handleStyle={{backgroundColor: 'transparent'}}
-                          overlayStyle={{backgroundColor: 'transparent'}}>
-                    <View style={styles.modalView}>
+                          modalHeight={132}
+                          modalStyle={styles.modal}
+                          overlayStyle={{backgroundColor: 'transparent'}}
+                          withHandle={false}
+                >
+                    <View style={styles.content}>
                         <Text style={styles.modalText}>Your password is reset</Text>
                         <Image style={styles.modalImage}
                                source={images.bonus}/>
                     </View>
-
                 </Modalize>
             </View>
         </ScrollView>

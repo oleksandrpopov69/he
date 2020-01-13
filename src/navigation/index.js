@@ -6,18 +6,22 @@ import SignUpContainer from "../containers/SignUp";
 import ResetPasswordContainer from  '../containers/ResetPassword'
 import NewPasswordContainer from  '../containers/NewPassword'
 import VerificationContainer from  '../containers/Verification'
+import OnboardingContainer from  '../containers/Onboarding'
+import DiscoverContainer from  '../containers/Onboarding/containers/Discover'
 
 const AppNavigator = createSwitchNavigator(
     {
-      Welcome: WelcomeContainer,
-      SignUp: SignUpContainer,
-      SignIn: SignInContainer,
-      ResetPassword: ResetPasswordContainer,
-      NewPassword: NewPasswordContainer,
-      Verification: VerificationContainer
+        Welcome: WelcomeContainer,
+        SignUp: SignUpContainer,
+        SignIn: SignInContainer,
+        ResetPassword: ResetPasswordContainer,
+        NewPassword: NewPasswordContainer,
+        Verification: VerificationContainer,
+        Onboarding: OnboardingContainer
+
     },
     {
-      initialRouteName: 'Welcome'
+        initialRouteName: 'Onboarding'
     });
 
 export default createAppContainer(AppNavigator);
