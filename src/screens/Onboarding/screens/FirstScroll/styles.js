@@ -9,6 +9,7 @@ const {text} = theme;
 
 const styles = StyleSheet.create({
     container: {
+        width: 350,
         justifyContent: 'center',
         marginLeft: 30,
         marginRight: 30
@@ -28,7 +29,7 @@ const styles = StyleSheet.create({
     },
     itemsContainer: {
         marginBottom: 235,
-        height: 185,
+        height: 185
     },
     item: {
         width: 150,

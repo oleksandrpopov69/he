@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         borderWidth: .5,
         borderColor: isSelected ? theme.getColor('grey') : 'transparent',
-    }),
+    })
 });
 
 export default styles;

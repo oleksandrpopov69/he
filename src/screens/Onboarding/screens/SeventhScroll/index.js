@@ -6,7 +6,6 @@
 import React from 'react';
 import {ScrollView, View, Text, Image} from "react-native";
 import styles from "../SeventhScroll/styles";
-import Button from "../../../../components/Button";
 import images from '../../../../assets/index'
 
 const {face} = images;

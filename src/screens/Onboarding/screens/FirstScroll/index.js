@@ -45,14 +45,14 @@ const Item = DATA.map((item) => {
 
 const FirstScroll = () => {
     return (
-        <ScrollView>
+        <ScrollView >
             <View style={styles.container}>
                 <Text style={styles.confirmation}>Let’s start, Mika!</Text>
                 <Text style={styles.captions}>What are you interested in?</Text>
-                <ScrollView horizontal={true}
+                <ScrollView horizontal
                             style={styles.itemsContainer}>
                     {Item}
-                </ScrollView>
+                </ScrollView >
                 <View style={styles.button}>
                     <Button text={'Next'}
                             onPress={() => {}}

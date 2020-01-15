@@ -10,6 +10,7 @@ import images from '../../../../assets/index'
 import Button from "../../../../components/Button";
 
 const {graph} = images;
+
 const SecondScroll = () => {
     return (
         <ScrollView>

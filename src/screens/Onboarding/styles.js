@@ -26,13 +26,6 @@ const styles = StyleSheet.create({
         ovals: {
             flexDirection: 'row'
         },
-        oval: {
-            width: 6,
-            height: 6,
-            borderRadius: 6,
-            margin: 2,
-            backgroundColor: theme.getColor('grey')
-        },
         skip: {
             flexDirection: 'row',
             justifyContent: 'center',
@@ -53,4 +46,13 @@ const styles = StyleSheet.create({
     },
 );
 
-export default styles;
+export const getOvalStyles = (active) => {
+        return {
+            width: 6,
+            height: 6,
+            borderRadius: 6,
+            margin: 2,
+            backgroundColor: theme.getColor(active ? 'purple' : 'grey')
+        }};
+
+    export default styles;
