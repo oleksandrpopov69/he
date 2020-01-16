@@ -4,7 +4,7 @@
  */
 
 import {StyleSheet} from 'react-native';
-import theme, {shadows} from "../../../../theme";
+import theme from "../../../../theme";
 const {text} = theme;
 
 const styles = StyleSheet.create({
@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     },
     captions: {
         width: 350,
-        height: 86,
+        height: 90,
         ...text.b36('dark1'),
         marginBottom: 30,
         fontWeight: 'bold'

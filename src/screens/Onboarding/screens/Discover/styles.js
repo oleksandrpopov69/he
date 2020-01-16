@@ -4,7 +4,7 @@
  */
 
 import {StyleSheet} from 'react-native';
-import theme from "../../../../theme";
+import theme, {shadows} from "../../../../theme";
 const {text} = theme;
 
 const styles = StyleSheet.create({
@@ -81,11 +81,6 @@ const styles = StyleSheet.create({
     smallArrowDown: {
         width: 12,
         height: 7
-    },
-    button: {
-        width: 350,
-        alignItems: 'flex-end',
-        marginBottom: 74
     }
 });
 

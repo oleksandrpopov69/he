@@ -5,7 +5,6 @@ import viewCross from './view-cross.png';
 import bonus from './bonus.png';
 import arrowRight from './arrow-right.png';
 import info from './info.png';
-import medium from './medium.png';
 import smallArrowDown from './small-arrow-down.png';
 import add from './add.png';
 import added from './added.png';
@@ -25,7 +24,13 @@ import turtle from  './turtle.png';
 import apple from  './nutrition-apple.png';
 import sport from  './sport.png';
 import face from  './face.png';
-
+import close from  './close.png';
+import medium from './medium.png';
+import medium2 from './medium2.png';
+import medium3 from './medium3.png';
+import medium4 from './medium4.png';
+import medium5 from './medium5.png';
+import medium6 from './medium6.png';
 
 export default {
     email,
@@ -35,7 +40,6 @@ export default {
     bonus,
     arrowRight,
     info,
-    medium,
     smallArrowDown,
     add,
     added,
@@ -54,5 +58,12 @@ export default {
     bear,
     sport,
     apple,
-    face
+    face,
+    close,
+    medium,
+    medium2,
+    medium3,
+    medium4,
+    medium5,
+    medium6
 }

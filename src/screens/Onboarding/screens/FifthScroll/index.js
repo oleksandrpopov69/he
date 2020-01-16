@@ -76,26 +76,6 @@ const FifthScroll = () => {
                     {Goals}
                 </View>
                 {Bases}
-                <View style={styles.buttons}>
-                    <Button text={'Back'}
-                            onPress={() => {}}
-                            color={'blue'}
-                            size={'middle'}
-                            shadow={'light'}
-                            outline
-                            start={{x: 0, y: 0}}
-                            end={{x: 1, y: 0}}
-                    />
-                    <Button text={'Next'}
-                            onPress={() => {}}
-                            color={'blue'}
-                            size={'middle'}
-                            shadow={'light'}
-                            gradient
-                            start={{x: 0, y: 0}}
-                            end={{x: 1, y: 0}}
-                    />
-                </View>
             </View>
         </ScrollView>
     );

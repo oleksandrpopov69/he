@@ -53,17 +53,6 @@ const FirstScroll = () => {
                             style={styles.itemsContainer}>
                     {Item}
                 </ScrollView >
-                <View style={styles.button}>
-                    <Button text={'Next'}
-                            onPress={() => {}}
-                            color={'blue'}
-                            size={'middle'}
-                            shadow={'light'}
-                            gradient
-                            start={{x: 0, y: 0}}
-                            end={{x: 1, y: 0}}
-                    />
-                </View>
             </View>
         </ScrollView>
     );

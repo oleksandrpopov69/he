@@ -3,15 +3,18 @@
  * @flow
  */
 
-import React from 'react';
+import React, {useState} from 'react';
 import { ScrollView, Text, TextInput, View, Image, TouchableOpacity } from "react-native";
-import Button from "../../../../components/Button";
 import styles from "./styles";
 import images from '../../../../assets/index'
 
-const {info, medium, smallArrowDown} = images;
+const {info, smallArrowDown} = images;
 
-const Discover = () => {
+const Discover = (props) => {
+
+    const {openMaskModal, mask} = props;
+    console.log(mask);
+
     return (
         <ScrollView>
             <View style={styles.container}>
@@ -27,23 +30,15 @@ const Discover = () => {
                            style={styles.input}/>
                 <Text style={styles.captions}>Choose your look.</Text>
                 <View style={styles.maskContainer}>
-                    <Image source={medium} style={styles.mask}/>
-                    <TouchableOpacity style={styles.maskInputContainer}>
-                        <Text style={styles.maskName}>Color</Text>
+                    <Image source={mask.image} style={styles.mask}/>
+                    <TouchableOpacity
+                        style={styles.maskInputContainer}
+                        onPress={openMaskModal}
+                    >
+                        <Text style={styles.maskName}>{mask.title}</Text>
                         <Image source={smallArrowDown}
                                style={styles.smallArrowDown}/>
                     </TouchableOpacity>
-                </View>
-                <View style={styles.button}>
-                    <Button text={'Next'}
-                            onPress={() => {}}
-                            color={'blue'}
-                            size={'middle'}
-                            shadow={'light'}
-                            gradient
-                            start={{x: 0, y: 0}}
-                            end={{x: 1, y: 0}}
-                    />
                 </View>
             </View>
         </ScrollView>

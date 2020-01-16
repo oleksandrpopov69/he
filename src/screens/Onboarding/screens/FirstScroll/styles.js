@@ -62,11 +62,6 @@ const styles = StyleSheet.create({
     buttonImage: {
         width: 36,
         height: 36
-    },
-    button: {
-        width: 350,
-        alignItems: 'flex-end',
-        marginBottom: 74
     }
 });
 

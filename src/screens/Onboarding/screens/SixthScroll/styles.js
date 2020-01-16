@@ -32,20 +32,14 @@ const styles = StyleSheet.create({
     container: {
         justifyContent: 'center',
         marginLeft: 30,
-        marginRight: 30
+        marginRight: 30,
+        marginBottom: 261
     },
     captions: {
         width: 350,
         height: 120,
         ...text.r24('dark1'),
         marginBottom: 30
-    },
-    buttons: {
-        marginTop: 240,
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        width: 350,
-        marginBottom: 74
     }
 });
 

@@ -11,7 +11,8 @@ const styles = StyleSheet.create({
     container: {
         justifyContent: 'center',
         marginLeft: 30,
-        marginRight: 30
+        marginRight: 30,
+        marginBottom: 30
     },
     captions: {
         width: 350,
@@ -43,13 +44,6 @@ const styles = StyleSheet.create({
         marginRight: 20,
         width: 275,
         ...text.r14('grey')
-    },
-    buttons: {
-        marginTop: 30,
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        width: 350,
-        marginBottom: 74
     }
 });
 
